@@ -1,13 +1,26 @@
 <template>
-  <HelloWorld />
+  <v-container fill-height fluid>
+    <v-layout fill-height text-xs-center wrap>
+      <Greeting />
+      <About />
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import Greeting from "../components/Greeting";
+import About from "../components/About";
 
-  export default {
-    components: {
-      HelloWorld
-    }
+export default {
+  components: {
+    Greeting,
+    About
   }
+};
 </script>
+
+<style>
+.container {
+  padding: 0;
+}
+</style>
